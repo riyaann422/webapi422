@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather App (No API)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="overlay">
+
+  <div class="container">
+
+    <h1>🌦️ Weather Finder</h1>
+
+    <!-- INPUT -->
+    <input type="text" id="cityInput" placeholder="Enter city name">
+
+    <!-- DROPDOWN -->
+    <select id="cityDropdown" onchange="selectCity()">
+      <option value="">-- Or choose a city --</option>
+      <option value="Kochi">Kochi</option>
+      <option value="Chennai">Chennai</option>
+      <option value="Bangalore">Bangalore</option>
+      <option value="Mumbai">Mumbai</option>
+      <option value="Delhi">Delhi</option>
+      <option value="London">London</option>
+      <option value="Tokyo">Tokyo</option>
+      <option value="Dubai">Dubai</option>
+    </select>
+
+    <button onclick="getWeather()">Search</button>
+
+    <div id="weatherBox"></div>
+
+    <h3>🕘 Recent Searches</h3>
+    <ul id="history"></ul>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
